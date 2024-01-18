@@ -1,0 +1,51 @@
+FED: Prvi parcijalni test
+----------------------------------------------------------------------------------------------------------------------
+
+ZADATAK:
+	Korišćenjem HTML i Sass tehnologija realizovati HTML stranicu prikazanu na slikama.
+	Implementirati sledeće zahteve:
+
+	1.	Sass kod modularizovati minimalno tako da se korišćene promenljive i mixini pišu u posebnim sass datotekama koje se uključuju u glavni fajl.
+	2.	Boje, fontove kao i ostale korisne vrednosti izdvojiti u sass promenljive.
+	3.	Realizovati sledeće efekte:
+        a.	Kada se mišem pređe preko linkova u navigaciji efekat je prikazan na slici "nav_bar_linkovi_hover.gif".
+		b.	Kada se mišem pređe preko slika u sekciji ispod navigacionog bara efekat je prikazan na slici "prodaja_red_hover.gif".
+    	c.	Kada se mišem pređe preko pojedinačne destinacije efekat je prikazan na slici "destinacije_hover.gif".
+		d.	Kada se mišem pređe preko linkova u sekciji "Često postavljena pitanja" efekat je prikazan na slici "faq_linkovi_hover.gif"
+		e.	Kada se mišem pređe preko navigacionog bara na malom ekranu efekat je prikazan na slici "nav_bar_mali_ekran_hover.gif"
+		f.	Tekst na vrhu stranice treba da se pomera neprestano sa desne na levu stranu kao što je prikazano na slici "informacije.gif" - ovaj efekat ne zavisi od položaja miša
+	4.	Realizovati responsive verzije stranice kao na priloženim slikama.
+	5.	Verzionisati kod korišćenjem git-a.
+
+BOJE:
+    plava pozadina: #173963;
+    siva pozadina: #f2f5f7;
+    plavi tekst: #234167;
+    crveni tekst: #ec1d24;
+    boja teksta mailova: #2872fa;
+    senka kod često postavljenih pitanja: #00000026;
+
+WEB FONTOVI:
+    Sans-Serif
+
+TEKST STRANICE:
+	- Sve informacije o saobraćaju vozova i redu vožnje, kao i o ceni karata možete dobiti pozivanjem Call Centra na broj 011 111 99 99.
+	- Akcionarsko društvo za železnički prevoz putnika "Srbijavoz", Beograd
+	- PIB: 1111111
+	- pisarnica@srbijavoz.rs
+	- Nemanjina 6, Beograd
+	- 011 360 28 99
+	- Za više informacija o cenama karata, uslovima putovanja i povlasticama:
+	- putnik.info@srbvoz.rs
+	- Reklamacije karata kupljenih na blagajnama i putem interneta:
+	- Za medijske upite i moguću saradnju:
+	- kontrola.prihoda@srbvoz.rs
+	- Cena vozne karte, rezervacije mesta i prevoz automobila na relaciji Zemun - Bar?
+	- mediji@srbijavoz.rs
+	- Koliko iznosi cena mesečne karte na relaciji Beograd centar - Novi Sad - Beograd centar?
+	- Koliki se popust ostvaruje korišćenjem kartice SRB PLUS i gde se može izraditi
+	- Kakve pogodnosti pruža godišnja pretplatna karta
+	- Koliki je rok važenja voznih karata
+	- Kako se vrši povraćaj cene za kartu kupljenu putem interneta
+
+

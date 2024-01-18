@@ -1,0 +1,307 @@
+@import 'vars', 'mixin';
+
+@include main;
+
+.banner{
+    background-color: $blue-bg;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+.container-nav{
+
+    width: 100%;
+    background-color: $gray-bg;
+}
+.nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    padding: 10px;
+    
+    color: $blue-txt;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+    ul{
+        display: flex;
+        gap: 20px;
+
+        li{
+            transition: 0.5s ease-in-out;
+            
+            &:hover{
+                color: $red-txt;
+                cursor: pointer;
+            }
+        }
+    }
+    .logo{
+        width: 150px;
+        height: 50px;
+    }
+}
+.hero{
+    background-image: url(/images/VozPozadina.webp);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+
+    .hero-menu{
+        background-color: white;
+        display: flex;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        height: 340px;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 8px;
+
+        .prodaja{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            background-image: url(/images/ProdajaKarata.webp);
+            width: 300px;
+            height:300px;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 10px;
+            transition: 0.5s ease-in-out;
+
+            &:hover{
+                transform: translateY(-10px)
+
+            }
+        }
+        .red-voznje{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            background-image: url(/images/RedVoznje.webp);
+            width: 300px;
+            height:300px;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 10px;
+            transition: 0.5s ease-in-out;
+            &:hover{
+                transform: translateY(-10px)
+
+            }
+        }
+    }
+}
+.popular-container{
+    background-color: $gray-bg;
+    width: 100%;
+    height: 50vh;
+
+    
+}
+.popular-head{
+    width: 90%;
+    margin: 0 auto;
+    color: $blue-txt;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+.popular-img{
+    display: flex;
+    justify-content: space-around;
+
+    .cities{
+
+        // &:hover {
+        //     P{
+        //         transition: 1s ease-in-out;
+        //         span{
+        //             transform: rotateX(180);
+        //         }
+        //     }
+            
+        // }
+        img{
+            border-radius: 8px;
+            transition: 1s ease-in-out;
+            &:hover{
+                transform: scale(1.1) ;
+            }
+            
+        }
+        h3{
+            color: $blue-txt;
+            
+        }
+        p{
+            color: gray;
+            transition: 1s ease-in-out;
+            display: block;
+            &:hover{
+                transform: rotateY(360deg);
+            }
+            span{
+                color: $red-txt;
+                font-weight: bold;
+                
+                
+
+            }
+        }
+    }
+}
+.txt-box{
+    display: flex;
+    // height: 50vh;
+    gap: 10px;
+    margin: 20px;
+    .levi{
+        width: 30%;
+        border-right: 1px solid $blue-bg;
+        padding-left: 30px;
+        h4{
+            color: $blue-txt;
+            padding:20px 0;
+        }
+        p{
+            padding: 15px 0;
+        }
+        .blue{
+            color: $mail-txt;
+            font-weight: bold;
+        }
+    }
+    .desni{
+        width:70%;
+        color: $blue-txt; 
+
+        h4{
+            
+            padding:20px 10px;
+        }
+        p{
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 8px 0px $shadow;
+            font-weight: bold;
+            transition: 0.5s ease;
+            &:hover {
+                color: $red-txt;
+                cursor:default;
+
+            }
+        }
+    }
+    
+}
+.footer{
+    background-color: $blue-bg;
+    
+    
+    padding: 20px;
+    position: relative;
+    span{
+        color: white;
+        padding: 20px;
+    }
+    .credits{
+        position: absolute;
+        right: 10px;
+        top: 1px;
+    }
+}
+
+@include tablet {
+    .hero-menu{
+        margin: 0 50px;
+        
+        flex-grow: 2;
+        div{
+            flex-grow: 2;
+        }
+    }
+    .popular-container{
+        
+        .popular-head {
+            h1{
+                font-size: 18px;
+            }
+        }
+        .popular-img{
+            .cities{
+                
+                img{
+                    width: 150px;
+                }
+            }
+        }
+    }
+    .txt-box{
+        flex-direction: column-reverse;
+        .levi{
+        width: 100%;
+        border-right: none;
+        border-top: 1px solid $blue-bg;
+        }
+        .desni {
+            width: 100%;
+        }
+    }
+    .footer{
+        padding: 20px;
+
+        .credits{
+            padding-top: 25px;
+            top: 70%;
+            left: 50%;
+        }
+    }
+    
+}
+@include mobile {
+    .hero-menu {
+        flex-direction: column;
+        
+    }
+    .popular-container{
+        height: 150vh;
+    }
+    .popular-img {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-grow: 3;
+        .cities{
+            
+            img {
+                width: 500px;
+            }
+        }
+        
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        span{
+            width: 50%;
+
+        }
+        .credits{
+            right: 20%;
+        }
+    }
+}
